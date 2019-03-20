@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>用户注册</title>
+<link rel="stylesheet" type="text/css" href="css/userReg.css"/>
+</head>
+<body>
+	<div class="reg">
+		<div class="content">
+			<form method="post" action="php/userReg.php">
+				<h3>用户注册</h3>
+				<input id="phone" type="text" placeholder="请输入11位手机号码" name="custId" />
+				<span id="phoneyz"></span>
+				<input id="password" name="custPass" type="password" placeholder="8-20个字母、数字或符合组合,请不要输入特殊字符"/>
+				<span id="passwordyz"></span>
+				<input id="pass" type="password" placeholder="再次填写密码">
+				<span id="passyz"></span>
+				<input id="yzmWrite" type="text">
+				<p id="yzmResult"></p>
+				<input id="yzm" type="button" value="获取验证码">
+				<span id="yzmspan"></span>
+				<input type="submit" value="立即注册">
+				<input type="checkbox" checked="checked"/>
+				<label for="">我已阅读并同意VANS的<a href="##" class="hov1">隐私政策</a>和<a href="##" class="hov2">使用条款</a></label>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript" src="js/userReg.js"></script>
+<script type="text/javascript" src="js/regExpTools.js"></script>
